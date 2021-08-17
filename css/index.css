@@ -1,23 +1,26 @@
-.conteudo{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(167, 167, 167);
-}
 
+.header{
+  width: 100%;
+  top: 0;
+  z-index: 20;
+}
+body{
+  background-color: var(--branco-fundo);
+}
 /*Carousel*/
 .carousel-back{
-    position: relative;
-    margin-bottom: 200px;
+  position: relative;
+    margin-bottom: 30px;
 }
+
 .carousel-page{
     display: none;
-    filter:brightness(70%);
-    filter:saturate(70%);
+    filter:brightness(80%);
     height: 200px;
 }
 .carousel-page img{
     height: 100%;
+   
 }
 
 
@@ -37,3 +40,138 @@
     from {opacity: .4}
     to {opacity: 1}
   }
+
+  .frase-carousel{
+    position:absolute;
+    z-index: 10;
+    width: 100%;
+   height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .frase-carousel p{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    font-family: 'Courgette', cursive;
+  }
+
+  /*Informações sobre a biblioteca*/
+
+  .info-back{
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .titulo{
+    color: var(--verde-escuro);
+    font-size: 26px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .texto{
+    font-size: 16px;
+    text-align: center;
+   margin-bottom: 20px;
+  }
+
+  /*Parte com dois cards*/
+  .cards-back{
+    width: 100%;
+    background-image: url("../img/fundo2.png");
+    margin-top: -170px;
+    padding-top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+  }
+  .card{
+    background-color: var(--branco-fundo);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  .card img{
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .card-txt{
+    margin: 0px 30px 30px 30px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .card a{
+    color: var(--verde-escuro);
+    font-size: 16px;
+  }
+  .direita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+/*CSS para desktop*/
+@media(min-width: 992px){
+.carousel-page{
+ 
+  height: 350px;
+}
+.frase-carousel p{
+ 
+  font-size: 30px;
+  
+}
+.frase-carousel{
+ 
+ height: 350px;
+ 
+}
+.frase-carousel img{
+  height: 100%;
+}
+.titulo{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 35px;
+}
+.texto{
+  font-size: 18px;
+}
+.card{
+  background-color: var(--branco-fundo);
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+.card-titulo{
+  margin-top: 0;
+  font-size: 32px;
+}
+.card img{
+margin-bottom: 0%;
+max-width: 540px;
+}
+.direita{
+  max-width: 500px;
+}
+
+.cards-back{
+  background-image: none;
+}
+.card a{
+  font-size: 20px;
+}
+
+}

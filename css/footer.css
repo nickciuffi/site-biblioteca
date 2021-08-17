@@ -1,9 +1,16 @@
 .footer{
-  
+    width: 100%;
     position: relative;
- margin-bottom: 0px;
-    background-color: blueviolet;
+    margin-bottom: 0px;
+  margin-top: 100px;
 }
-p{
-    margin: 0px;
+iframe{
+    width: 60%;
+}
+.footer-back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 30px;
+    background-color: var(--verde-escuro);
 }
