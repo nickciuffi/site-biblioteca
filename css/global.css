@@ -21,6 +21,7 @@ a {
     cursor: pointer;
 }
 :root {
-    --verde-escuro: rgb(45, 129, 42);
+    --verde-escuro: #20702C;
+    --verde-claro: rgb(37, 182, 37);
     --branco-fundo: #F7F7F7;
 }
