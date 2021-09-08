@@ -60,4 +60,41 @@
     font-size: 17px;
     font-weight: 500;
 }
+iframe{
+width: 300px;
+height: 250px;
+border-radius: ;
+}
 
+@media(max-width: 992px){
+    iframe{
+        width: 90%;
+        height: 200px;
+    }
+    .footer-back{
+        flex-direction: column;
+    }
+    .endereço{
+        border-left: none;
+        border-right: none;
+        border-top: 3px solid white ;
+        border-bottom: 3px solid white ;
+        margin: 0%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 100%;
+        padding: 30px 20px;
+    }
+    .endereço p{
+        width: 100%;
+        
+    }
+    .icones{
+        margin-left: 0;
+        width: 100%;
+        padding-left: 20px;
+    }
+    .forte{
+        font-size: 18px;
+    }
+}
