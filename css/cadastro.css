@@ -1,0 +1,62 @@
+body{
+    font-size: 25px;
+}
+
+.cont{
+    padding: 50px 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-combo{
+    width: 100%;
+}
+.input-combo label{
+    font-size: 0.7em;
+    margin-bottom: -5px;
+    color: rgb(8, 75, 22);
+}
+input{
+font-size: 30px;
+}
+
+input:focus {
+    border-bottom: 2px solid var(--verde-escuro) !important;
+    box-shadow: 0 0px 0 0 var(--verde-escuro) !important;
+}
+
+.btn-cad{
+    color: white;
+    background-color: var(--verde-escuro);
+    padding: 10px 10px;
+    width: min-content;
+    margin-top: 30px;
+    border: 2px solid var(--verde-claro);
+}
+.btn-cad:hover{
+background-color: var(--verde-escuro);
+}
+.login-btn{
+    margin-top: 40px;
+    color: black;
+    font-size: 0.7em;
+    text-align: center;
+}
+.horizontal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 996px){
+    .horizontal{
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .cont{
+        padding: 50px 20%;
+    }
+}

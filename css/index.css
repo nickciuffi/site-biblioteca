@@ -67,17 +67,18 @@ body{
     align-items: center;
     margin-bottom: 50px;
   }
-  .titulo{
-    color: var(--verde-escuro);
-    font-size: 26px;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 15px;
-  }
+ 
   .texto{
     font-size: 16px;
     text-align: center;
    margin-bottom: 20px;
+  }
+  .highlight{
+   
+  }
+  .highlight::selection{
+    color: black;
+  
   }
 
   /*Parte com dois cards*/

@@ -31,8 +31,8 @@ text-align: center;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 30% 0px;
+    justify-content: space-between;
+    padding: 20% 0px;
     width: 80%;
 }
 
