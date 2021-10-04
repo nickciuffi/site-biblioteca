@@ -21,7 +21,6 @@
 .link-lateral i{
     font-size: 50px;
     color: var(--verde-escuro);
-   
 }
 .sidenav li > a{
 color: var(--verde-escuro);
@@ -32,8 +31,8 @@ text-align: center;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 30% 0px;
+    justify-content: space-between;
+    padding: 20% 0px;
     width: 80%;
 }
 
@@ -42,54 +41,6 @@ text-align: center;
     color: var(--verde-escuro);
     font-size: 20px;
   }
-  .perfil{
-    display: none;
-    height: 100px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-top: -100px;
-}
-.perfil img{
-    border-radius: 50%;
-    height: 100%;
-   
-}
-.aparece-logged{
-    display: none;
-}
-.modal-perf{
-  background-color: var(--branco-fundo);
-  border-radius: 10px;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  z-index: 500;
-  margin-top: -15px;
-  font-size: 1.1rem;
-  display: none; 
-  border: 2px var(--verde-escuro) solid;
- 
-}
-.linha{
-    height: 2px;
-    width: 100%;
-    background-color: var(--verde-escuro);
-}
-.item-modal{
-    margin-bottom: 15px;
-    margin-top: 15px;
-
-}
-
-.modal-perf a{
-    color: red;
-   
-}
-.link-modal{
-    margin: 15px 0px;
-}
   
 /*Css para destop*/
 @media (min-width: 992px){
@@ -123,24 +74,6 @@ text-align: center;
     .menu-item a:hover{
         color: var(--verde-escuro);
     }
-    .perfil{
-        position: absolute;
-
-        right: 50px;
-        height: 50px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        width: unset;
-        padding: 0px 20px;
-    }
-    .modal-perf{
-        display: none;
-        position: absolute;
-        width: 25%;
-        right: 2%;
-        top: 10%
-    }
-   
 }
 
   

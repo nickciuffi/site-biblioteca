@@ -1,24 +1,49 @@
 
 <div class="linha-verde"></div>
-<div class="background z-depth-3">
+<div class="background z-depth-3" id="menu">
 
   <div style="margin-left: 10px" class="menu-item hide-on-med-and-down"><a href="eventos.html">Eventos</a></div>
   <div class="menu-item hide-on-med-and-down"><a href="faleconosco.html">Fale conosco</a></div>
   <div class="logo"><a href="/"><img src="./img/logo.png" alt=""></a></div>
-  <div class="menu-item hide-on-med-and-down"><a href="login.html">Entrar</a></div>
-  <div class="menu-item hide-on-med-and-down"><a href="cadastro.html">Cadastrar</a></div>
+  <div class="menu-item hide-on-med-and-down some-logged"><a href="livros.html">Entrar</a></div>
+  <div class="menu-item hide-on-med-and-down some-logged"><a href="login.html">Cadastro</a></div>
+  <div class='menu-item hide-on-med-and-down aparece-logged'><a href='livros.html'>Livros</a></div>
+  <div class='menu-item hide-on-med-and-down aparece-logged'><a href='emprestimos.html'>Emprestimos</a></div>
   <div class="link-lateral right hide-on-large-only"> <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
   </div>
+<a class="perfil hide-on-med-and-down" id="perfil"><img id="icon-perf" src="https://avatars.dicebear.com/api/initials/nicolas-ciuffi.svg" alt="Imagem de perfil"></a>
+<div class="modal-perf z-depth-5">
+    <p class="item-modal" id="nome-modal">Nome:</p>
+    <div class="linha"></div>
+    <p class="item-modal" id="email-modal">email:</p>
+    <div class="linha"></div>
+    <div class="link-modal">
+    <a href="" onclick="sair()">Sair</a>
+  </div>
+</div>
 </div>
 
-
 <ul class="sidenav" id="mobile-demo">
+  
+  <a class="perfil" id="perfil-mob"><img id="icon-perf-mob" src="https://avatars.dicebear.com/api/initials/nicolas-ciuffi.svg" alt="Imagem de perfil"></a>
+  <div class="modal-perf z-depth-5" id="modal-perf-mob">
+      <p id="nome-modal-mob">Nome: Nicolas</p>
+      <br>
+      <p id="email-modal-mob">email:nicolas@gmail.com</p>
+      <br>
+      <a href="" onclick="sair()">Sair</a>
+    </div>
   <li><a href="/">Início</a></li>
   <li><a href="eventos.html">Eventos</a></li>
-  <li><a href="login.html">Entrar</a></li>
-    <li><a href="cadastro.html">Cadastrar</a></li>
+  <li><a href="faleconosco.html">Fale conosco</a></li>
+    <li class="some-logged"><a href="login.html">Entrar</a></li>
+    <li class="some-logged"><a href="cadastro.html">Cadastrar</a></li>
+    <li class="aparece-logged"><a href="livros.html">Livros</a></li>
+    <li class="aparece-logged"><a href="emprestimos.html">Emprestimos</a></li>
   </ul>
 
   <script> $(document).ready(function(){
     $('.sidenav').sidenav();
+  
   });</script>
+  <script src="js/icon.js"></script>

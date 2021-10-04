@@ -51,6 +51,6 @@ var ajaxRequest;
 
 function logar(email_store, nome_store){
     localStorage.setItem("email", email_store);
-    localStorage.setItem("logado", true);
+    localStorage.setItem("logged", true);
     localStorage.setItem("nome", nome_store);
 }
