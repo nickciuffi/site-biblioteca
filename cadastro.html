@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
+  
+  <link rel="shortcut icon" href="img/logo-no-back.png">
     <!-- Compiled and minified CSS -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,20 +18,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fale conosco</title>
+    <title>Cadastro</title>
 </head>
 <body>
     <div class="header"></div>
 
     <div class="cont">
-      <div class="titulo">CADASTRE-SE</div>
+      <div class="titulo">Cadastro</div>
+
+     
       <div class="input-combo">
         <label for="nome">Nome</label>
         <input type="text" placeholder="Ex: Marcio de Freitas" id="nome">
       </div>
       <div class="input-combo">
         <label for="email">Email</label>
-        <input type="email" placeholder="Ex: Marcio@gmail.com" id="email">
+        <input type="text" placeholder="Ex: Marcio@gmail.com" id="email">
       </div>
       <div class="input-combo">
         <label for="senha1">Senha</label>
@@ -43,6 +48,8 @@
       <input type="submit" class="btn-cad" id="btn" value="Cadastrar">
       <a href="login.html" class="login-btn">Já possui uma conta? <strong>Login</strong></a>
     </div>
+
+   
     </div>
 
  <div class="footer"></div>
@@ -50,6 +57,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
       <!-- Compiled and minified JavaScript -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
       <script>
           $(".header").load("header.html");
           $(".footer").load("footer.html");

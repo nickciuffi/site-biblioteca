@@ -46,8 +46,14 @@ $("#perfil-mob").click(function(){
 
 function sair(){
     localStorage.setItem("logged", "false");
-}
 
+    Swal.fire({
+        title: 'Log out feito!',
+        text: "Se quiser entrar em outra conta, aperte em 'login'",
+        icon: 'info',
+    })
+}
+    
 //Esconde o modal
 $(document).mouseup(function(e){
     var container = $(".modal-perf");
